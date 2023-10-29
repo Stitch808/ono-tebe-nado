@@ -1,7 +1,3 @@
-@media screen and (max-width: 1440px) {
-  html {font-size: calc(1vw / 14.4)}   /* 100vw / 1440 */
-}
-
 *,
 *::before,
 *::after {
