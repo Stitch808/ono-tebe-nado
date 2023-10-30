@@ -6,7 +6,7 @@
   text-underline-offset: 5px;
 }
 
-.header-nav {
+.nav {
   display: flex;
 }
 
@@ -35,8 +35,8 @@
 
 .header-contacts {
   max-width: 250px;
+  width: 100%;
   justify-self: end;
-  height: 97px;
   padding-top: 6px;
   padding-left: 10px;
   font-family: Raleway;
@@ -61,6 +61,7 @@
 }
 
 .cover {
+  position: relative;
   z-index: 1;
   flex-shrink: 0;
   min-width: 1440px;
@@ -73,12 +74,8 @@
 
 .overlay {
   position: absolute;
-  z-index: 2;
-  width: 100%;
-  max-height: 757px;
-  height: 100%;
+  inset: 0;
   background-color: rgb(0 0 0 / 0.6);
-  background-size: cover;
 }
 
 .cover-title {
@@ -271,7 +268,6 @@
 .card-title {
   position: relative;
   z-index: 3;
-  width: 350px;
   color: #FFF;
   font-family: Raleway;
   font-weight: 700;
@@ -287,8 +283,8 @@
   position: relative;
   z-index: 3;
   flex-shrink: 0;
-  width: 350px;
-  height: 96px;
+  min-width: 350px;
+  width: 100%;
   color: #FFF;
   font-family: Raleway;
   font-weight: 400;
@@ -312,20 +308,22 @@
 }
 
 .about {
-  width: 1340px;
-  height: 487px;
+  max-height: 487px;
+  height: 100%;
 }
 
 .about__column {
   display: grid;
+  column-gap: 25px;
   grid-template-columns: 430px 1fr;
   justify-items: center;
-  height: 487px;
-  padding: 0px 50px;
+  padding: 10px 52px;
 
 }
 
 .about__logo {
+  position: relative;
+  bottom: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,11 +344,8 @@
 }
 
 .about__title {
-  position: relative;
-  left: 25px;
   justify-self: start;
   align-self: center;
-  height: 40px;
   color: #000;
   font-family: Raleway;
   font-weight: 700;
@@ -361,17 +356,14 @@
 }
 
 .about__text {
-  position: relative;
-  top: 1px;
-  left: 25px;
+  min-width: 885px;
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-items: end;
   grid-column-start: 2;
   gap: 25px;
-  width: 885px;
-  height: auto;
   color: #000;
   font-family: Raleway;
   font-weight: 400;
@@ -384,22 +376,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-content: center space-between;
-  margin: 180px 50px 90px 50px;
+  margin: 186px 50px 90px 53px;
   text-underline-offset: 5px;
 }
 
 .footer-contacts {
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  justify-self: start;
-  height: 97px;
+  max-width: 250px;
+  width: 100%;
   font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-menu {
@@ -416,59 +411,45 @@
 }
 
 .footer__social-list {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-self: end;
   justify-content: center;
-  gap: 45px;
+  gap: 48px;
   list-style: none;
 }
 
 
 .footer__social-link {
-  position: relative;
   z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: white;
 }
 
-
-.social-icon-yt {
+.footer__social-icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   text-decoration: none;
-  background-image: url(../images/yt.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.social-icon-yt {
+  background-image: url(../images/YouTube.svg);
 }
 
 .social-icon-vk {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  background-image: url(../images/vk.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/VK.svg);
 }
 
 .social-icon-pinterest {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  background-image: url(../images/pinterest.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/Pinterest.svg);
 }
