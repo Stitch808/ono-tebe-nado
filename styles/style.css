@@ -24,13 +24,11 @@
   list-style: circle;
 }
 
-
 .logo_img {
   justify-self: center;
   align-self: center;
   width: 148px;
   height: 105px;
-  
 }
 
 .header-contacts {
@@ -57,6 +55,8 @@
 }
 
 .header-address {
+  min-width: 250px;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -82,6 +82,13 @@
   z-index: 3;
   display: grid;
   row-gap: 20px;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
 .cover-title-start {
@@ -118,38 +125,17 @@
 .aligned-text {
   position: relative;
   z-index: 2;
-  color: #FFF;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 100px;
-  font-style: normal;
-  line-height: 100%;
   letter-spacing: 30px;
-  text-transform: uppercase;
 }
 
 .letter-spacing-extended {
   position: relative;
   z-index: 2;
-  color: #FFF;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 100px;
-  font-style: normal;
-  line-height: 100%;
   letter-spacing: 0.6em;
-  text-transform: uppercase;
 }
 
 .no-letter-spacing {
-  color: #FFF;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 100px;
-  font-style: normal;
-  line-height: 100%;
   letter-spacing: initial;
-  text-transform: uppercase;
 }
 
 .cover__description {
@@ -178,7 +164,6 @@
   word-spacing: 16px;
 }
 
-
 .bet-button {
   width: 257px;
   height: 52px;
@@ -200,7 +185,7 @@
   max-width: 1340px;
   width: 100%;
   height: 100%;
-  margin: 180px 70px 181px 50px;
+  margin: 180px 70px 181px 52px;
 }
 
 .lots__heading {
@@ -223,19 +208,16 @@
   list-style-type: none;
 }
 
-
 .lots__card-list-item {
   flex-grow: 1;
 }
 
 .card-link {
-    display: inline-block;
-    height: 100%;
-    text-decoration: none;
+  height: 100%;
+  text-decoration: none;
 }
 
 .element {
-  position: relative;
   width: 100%;
   max-width: 430px;
   min-height: 450px;
@@ -295,7 +277,7 @@
 }
 
 .lots__look-more-link {
-  display: inline-block;
+  display: inline-flex;
   margin-top: 28px;
   margin-left: 41px;
   color: #000;
@@ -318,7 +300,6 @@
   grid-template-columns: 430px 1fr;
   justify-items: center;
   padding: 10px 52px;
-
 }
 
 .about__logo {
@@ -419,24 +400,16 @@
   list-style: none;
 }
 
-
 .footer__social-link {
-  z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: white;
 }
 
 .footer__social-icon {
-  position: relative;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
